@@ -40,13 +40,45 @@
     gap: 5px;
 }
 
-.btn {
+.bton {
     border-radius: 10px;
     text-align: left;
     border: 1px solid grey;
     box-shadow: 1px 1px 18px grey;
     background: white;
 
+}
+.btoon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 55px;
+    border-radius: 10px;
+    text-align: left;
+    /* border: 1px solid grey; */
+    background-color: white;
+    outline: none;
+    border: none;
+    margin: 5px 0px;
+}
+.sm{
+    font-size: 14px;
+    padding-left: 30px;
+    height: 30px;
+}
+.drop{
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -5px;
+}
+.sm:hover{
+    color: #6fd943;
+    font-size: 16px;
+}
+.btoon:hover{
+    background-color: #6fd943;
 }
 
 #abs {
@@ -188,7 +220,7 @@ select {
 .fa-angle-down,
 .fa-comment,
 .fa-diagram-project,
-.fa-globe {
+.fa-globe,.fa-house,.fa-angle-right,.fa-users {
     color: black;
 }
 
