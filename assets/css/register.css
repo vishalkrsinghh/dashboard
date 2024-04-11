@@ -1,0 +1,63 @@
+.right {
+    float: right;
+    background: linear-gradient(141.55deg, #922C88 3.46%, #922C88 99.86%), #922C88 !important;
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    z-index: -10;
+}
+
+.left {
+    float: left;
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    z-index: -11;
+}
+
+.flx {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    justify-content: center;
+}
+
+.frm {
+    width: 75%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+    margin: 15px 15px;
+    padding: 10px 10px;
+}
+#reg{
+    display: none;
+}
+
+@media only screen and (max-width: 991px){
+img {
+    display: none;
+} 
+}
+@media only screen and (min-width: 768px){
+#reg,#log {
+    width: 50%;
+} 
+}
+@media only screen and (max-width: 1300px){
+.img-1 {
+    max-height: 500px;
+}
+.img-2 {
+    max-height: 675px;
+}
+}
+@media only screen and (max-width: 1439px){
+.img-1 {
+    max-height: 500px;
+}
+.img-2 {
+    max-height: 675px;
+}
+}

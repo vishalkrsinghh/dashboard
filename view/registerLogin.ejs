@@ -1,0 +1,107 @@
+<title>Login</title>
+<link rel="stylesheet" href="/css/register.css">
+<script src="/js/register.js" defer></script>
+
+
+<div >
+    <div class="left">
+        <img src="https://hr.politicksnow.in/assets/custom/auth/images/theme-3.svg"
+            style="position: absolute;bottom: 0;left: 0;" height="88%" alt="" class="img-1">
+    </div>
+    <div class="right">
+
+        <img src="https://hr.politicksnow.in/assets/custom/auth/images/common.svg" height="100%" style="position: absolute;bottom: 0;right: 0;"
+            alt="" class="img-2">
+    </div>
+
+</div>
+
+<div class="flx" >
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <form class="frm" id="log" action="/login_admin" method="post">
+        <div>
+           <h2>Login</h2> 
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <a href="">Forgot Your Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+        <div class="mb-3 my-4 form-check">
+            Don't have an account?<a href="" id="showRegister"> Register</a>
+        </div>
+      </form>
+
+      <form id="reg" class="frm" action="/create_admin" method="post">
+        <div>
+           <h2>Register</h2> 
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" >
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="cnfPassword1" class="form-label">Confirm password</label>
+          <input type="password" class="form-control" name="cnfpassword" id="cnfPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Register</button>
+        <div class="mb-3 my-4 form-check">
+            Already have an account?<a href="" id="showLogin"> Login</a>
+        </div>
+      </form>
+</div>

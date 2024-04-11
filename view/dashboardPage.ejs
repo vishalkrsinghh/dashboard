@@ -1,0 +1,278 @@
+<title>Dashboard</title>
+<link rel="stylesheet" href="/css/dashboard.css">
+<script src="/js/dashboard.js" defer></script>
+
+
+
+<div class="main">
+
+    <div class="one">
+
+        <div class="logo">
+
+        </div>
+
+        <div class="sidebar">
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="two">
+        <nav class="nav">
+            <div class="lft"> <button id="btn" class="btn"><img src="/images/circularprofileimg.jpg" alt="" width="35px"
+                        height="35px" style="border-radius: 50%;"> <span>
+                        <%= adminName%>
+                    </span> <i class="fa-solid fa-angle-down"></i> </button>
+
+                <div id="abs">
+                    <div> <a href="">Profile</a> </div>
+                    <div> <a href="">Logout</a> </div>
+                </div>
+
+            </div>
+            <div class="rit"> <button class="btn"><i class="fa-solid fa-diagram-project"></i></button> <button
+                    class="btn"> <i class="fa-regular fa-comment"></i></button> <button class="btn"> <i
+                        class="fa-solid fa-globe"></i> <select name="" id="">
+                        <option value="">English</option>
+                    </select> </button> </div>
+        </nav>
+
+        <h4 style="margin: 30px 10px;"> Dashboard </h4>
+
+        <div class="div1 flx">
+
+            <div class="flxe">
+                <div>
+                    <div class="back"><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div>
+                    <div class="sm"> Total </div> <strong>Clients</strong>
+                </div>
+                <div> 0 </div>
+            </div>
+            <div class="flxe">
+                <div>
+                    <div class="back2"><i class="fa-solid fa-user-group"></i></div>
+                </div>
+                <div>
+                    <div class="sm"> Total </div> <strong>Employees</strong>
+                </div>
+                <div> 0 </div>
+            </div>
+            <div class="flxe">
+                <div>
+                    <div class="back3"><i class="fa-solid fa-list-check"></i></div>
+                </div>
+                <div>
+                    <div class="sm"> Total </div> <strong>Projects</strong>
+                </div>
+                <div> 0 </div>
+            </div>
+            <div class="flxe">
+                <div>
+                    <div class="back4"><i class="fa-solid fa-table-cells-large"></i></div>
+                </div>
+                <div>
+                    <div class="sm"> Total </div> <strong>Estimation</strong>
+                </div>
+                <div> 0 </div>
+            </div>
+            <div class="flxe">
+                <div>
+                    <div class="back5"><i class="fa-solid fa-receipt"></i></div>
+                </div>
+                <div>
+                    <div class="sm"> Total </div> <strong>Invoice</strong>
+                </div>
+                <div> 0 </div>
+            </div>
+            <div class="flxe">
+                <div>
+                    <div class="back6"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                </div>
+                <div>
+                    <div class="sm"> Total </div> <strong>Lead</strong>
+                </div>
+                <div> 0 </div>
+            </div>
+
+        </div>
+
+        <div class="div2 flx">
+
+            <div class="cr">
+
+                <div class="top">
+                    Estimation Overview
+                </div>
+
+                <div class="progress" style="height: 5px;margin: 5px 0px;"></div>
+
+                <div class="items">
+                    <div><span>●</span> 0 Draft <span class="gry">(0.00%)</span></div>
+                    <div><span class="b">●</span> 0 Open <span class="gry">(0.00%)</span></div>
+                    <div><span class="g">●</span> 0 Sent <span class="gry">(0.00%)</span></div>
+                    <div><span class="r">●</span> 0 Close <span class="gry">(0.00%)</span></div>
+                </div>
+
+            </div>
+            <div class="cr">
+
+                <div class="top">
+                    Invoice Overview
+                </div>
+
+                <div class="progress" style="height: 5px;margin: 5px 0px;"></div>
+
+                <div class="items">
+                    <div><span>●</span> 0 Draft <span class="gry">(0.00%)</span></div>
+                    <div><span class="b">●</span> 0 Open <span class="gry">(0.00%)</span></div>
+                    <div><span class="g">●</span> 0 Sent <span class="gry">(0.00%)</span></div>
+                    <div><span class="r">●</span> 0 Unpaid <span class="gry">(0.00%)</span></div>
+                    <div><span class="o">●</span> 0 Paid <span class="gry">(0.00%)</span></div>
+                    <div><span class="gry">●</span> 0 Partialy Paid <span class="gry">(0.00%)</span></div>
+                </div>
+
+            </div>
+            <div class="cr">
+
+                <div class="top">
+                    Project Overview
+                </div>
+
+                <div class="progress" style="height: 5px; margin: 5px 0px;"></div>
+
+                <div class="items">
+                    <div><span class="b">●</span> 0 Not Started <span class="gry">(0.00%)</span></div>
+                    <div><span class="g">●</span> 0 In Progress <span class="gry">(0.00%)</span></div>
+                    <div><span class="r">●</span> 0 On Hold <span class="gry">(0.00%)</span></div>
+                    <div><span class="o">●</span> 0 Canceled <span class="gry">(0.00%)</span></div>
+                    <div><span class="gry">●</span> 0 Finished <span class="gry">(0.00%)</span></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="div3 flx">
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="spn"></span>
+                    Top Due Payment
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Payment record not found.</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="spn"></span>
+                    Top Due Project
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Project record not found.</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="spn"></span>
+                    Top due task
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Task record not found.</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="spn"></span>
+                    Meeting schedule
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Meeting schedule record not found.</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="spn"></span>
+                    This week event
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Event not found.</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="spn"></span>
+                    New support
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>New support record not found.</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="spn"></span>
+                    Contract expiring soon
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Payment record not found.</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="spn"></span>
+                    New Client
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Client Detail</p>
+                    </blockquote>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card cd">
+            <div class="card-header">
+                <span class="spn"></span>
+                Goals
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p></p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
