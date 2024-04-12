@@ -6,123 +6,14 @@
 
 <div class="main">
 
-    <div class="one">
-
-        <div class="logo">
-
-        </div>
-
-        <div class="sidebar">
-
-            <button class="btoon"> <i class="fa-solid fa-house"></i><span> Dashboard </span></button>
-            <button class="btoon btnn"> <i class="fa-solid fa-users"></i><span> Staff </span> <span class="changeArrow">
-                    <i class="fa-solid fa-angle-right"></i> </span> </button>
-
-            <div id="drop" class="drop">
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Employees</div>
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Clients</div>
-            </div>
-
-            <button class="btoon btnn"> <i class="fa-solid fa-hand"></i><span> Hr </span> <span class="changeArrow"> <i
-                        class="fa-solid fa-angle-right"></i> </span> </button>
-            <div id="drop" class="drop">
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Attendance</div>
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Holiday</div>
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Leave</div>
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Meeting</div>
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Asset</div>
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Document</div>
-            </div>
-
-            <button class="btoon btnn"> <i class="fa-solid fa-hand"></i><span> Hr </span> <span class="changeArrow"> <i
-                class="fa-solid fa-angle-right"></i> </span> </button>
-    <div id="drop" class="drop">
-        <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                style="width:10px;height:10px">
-            </lord-icon> Attendance</div>
-        <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                style="width:10px;height:10px">
-            </lord-icon> Holiday</div>
-        <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                style="width:10px;height:10px">
-            </lord-icon> Leave</div>
-        <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                style="width:10px;height:10px">
-            </lord-icon> Meeting</div>
-        <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                style="width:10px;height:10px">
-            </lord-icon> Asset</div>
-        <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                style="width:10px;height:10px">
-            </lord-icon> Document</div>
-    </div>
-
-            <button class="btoon btnn"> <i class="fa-solid fa-dollar-sign"></i><span> PreSale </span> <span
-                    class="changeArrow"> <i class="fa-solid fa-angle-right"></i> </span> </button>
-            <div id="drop" class="drop">
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Employees</div>
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Clients</div>
-            </div>
-            <button class="btoon btnn"> <i class="fa-solid fa-dollar-sign"></i><span> PreSale </span> <span
-                    class="changeArrow"> <i class="fa-solid fa-angle-right"></i> </span> </button>
-            <div id="drop" class="drop">
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Employees</div>
-                <div class="sm"> <lord-icon src="https://cdn.lordicon.com/jeycryzx.json" trigger="hover"
-                        style="width:10px;height:10px">
-                    </lord-icon> Clients</div>
-            </div>
-
-        </div>
-
-    </div>
+    <%- include('_sidebarPartial')%>
 
 
     <div class="two">
 
-        <i class="fa-solid fa-bars" id="menu"></i>
-        
-        <nav class="nav">
-            <div class="lft"> <button id="btn" class="bton"><img src="/images/circularprofileimg.jpg" alt=""
-                        width="35px" height="35px" style="border-radius: 50%;"> <span>
-                        <%= adminName%>
-                    </span> <i class="fa-solid fa-angle-down"></i> </button>
 
-                <div id="abs">
-                    <div> <a href="">Profile</a> </div>
-                    <div> <a href="">Logout</a> </div>
-                </div>
-
-            </div>
-            <div class="rit"> <button class="bton"><i class="fa-solid fa-diagram-project"></i></button> <button
-                    class="bton"> <i class="fa-regular fa-comment"></i></button> <button class="bton"> <i
-                        class="fa-solid fa-globe"></i> <select name="" id="">
-                        <option value="">English</option>
-                    </select> </button> </div>
-        </nav>
-
-        <h4 style="margin: 30px 10px;"> Dashboard </h4>
+        <%- include('_navbarPartial')%>
+        <h4 style="margin: 30px 10px; padding: 2px 5px;"> Dashboard </h4>
 
         <div class="div1 flx">
 

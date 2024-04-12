@@ -100,3 +100,18 @@ module.exports.loginAdmin = async (req, res) => {
         })
     }
 }
+
+
+module.exports.logoutAdmin = async (req, res) => {
+
+    try{
+        res.cookie("token","");
+        req.flash('success', 'Logged out Successfully!');
+        return res.redirect("/");
+    }catch(err){
+        res.status(500).json({
+            Error: "Error in logged out, Error in Code, Server Side Error .",
+            data: { error }
+        })
+    }
+}

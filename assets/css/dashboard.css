@@ -4,13 +4,15 @@
     height: 100vh;
 }
 
-.one {
-    /* background-color: blue; */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .two {
     overflow: scroll;
-    /* max-height: 100vh; */
 }
 .two::-webkit-scrollbar{
     display: none;
@@ -141,6 +143,12 @@ select {
     background: black;
 }
 
+.h{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .b{
     color: rgb(152, 152, 235);
 }
@@ -190,6 +198,14 @@ select {
     padding: 10px 15px;
     box-shadow: 2px 1px 5px;
     min-height: 175px;
+}
+
+.crd{
+    align-items: center;
+    padding: 15px 5px;
+    max-height: 140px;
+    min-width: 270px!important;
+    cursor: pointer;
 }
 
 .items {
@@ -249,11 +265,24 @@ select {
     border-radius: 10px;
     text-align: center;
 }
+.fa-user-plus{
+    background-color: #6fd943;
+    box-shadow: 1px 1px 5px;
+    min-width: 35px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
 
 .fa-angle-down,
 .fa-comment,
 .fa-diagram-project,
-.fa-globe,.fa-house,.fa-angle-right,.fa-users,.fa-hand,.fa-dollar-sign,.fa-angle-down {
+.fa-globe,.fa-house,.fa-angle-right,.fa-users,.fa-hand,.fa-dollar-sign,.fa-angle-down,.fa-user-plus {
     color: black;
 }
 

@@ -3,6 +3,7 @@
 let btn= document.getElementById("btn");
 let abs= document.getElementById("abs");
 let btnn= document.getElementsByClassName("btnn");
+let btoon= document.getElementsByClassName("btoon");
 let drop= document.getElementsByClassName("drop");
 let changeArrow= document.getElementsByClassName("changeArrow");
 let menu= document.getElementById("menu")
@@ -35,6 +36,15 @@ for(let i=0; i<btnn.length; i++){
         changeArrow[i].innerHTML=`<i class="fa-solid fa-angle-right"></i>`
     })
 }
+
+// complete it after some time
+// for(let i=0; i<btoon.length; i++){
+//     btoon[i].onclick= (e)=>{
+//         e.stopPropagation();
+//         btoon[i].style.background="#6fd943";
+//     }
+
+// }
 
 menu.addEventListener("click", (e)=>{
 
@@ -69,6 +79,8 @@ document.addEventListener("click", ()=>{
             one.style.display="block" 
             main.style.display="grid"
             one.style.position="static";
+            two.style.pointerEvents="auto"
+            two.style.opacity="1"
         }else{
             one.style.display="none"
             main.style.display="block"

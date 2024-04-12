@@ -9,6 +9,9 @@ let router= express.Router();
 router.get("/", require("../controller/registerLogin").registerLogin);
 router.post("/create_admin",require("../controller/createAdmin").createAdmin);
 router.post("/login_admin",require("../controller/createAdmin").loginAdmin);
+router.get("/logout",authentication.auth,require("../controller/createAdmin").logoutAdmin);
+router.get("/client",authentication.auth,require("../controller/clientPage").client);
+router.get("/employee",authentication.auth,require("../controller/employeePage").employee);
 router.get("/dashboard",authentication.auth,require("../controller/dashboard").dashboard);
 
 module.exports= router;
