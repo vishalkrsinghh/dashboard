@@ -15,7 +15,15 @@ let adminSchema=new mongoose.Schema({
     password:{
         type:String,
         require:true
-    }
+    },
+    clientArray:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"clientCollection"
+    }],
+    employeeArray:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"employeeCollection"
+    }]
 
 })
 

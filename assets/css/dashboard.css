@@ -5,12 +5,16 @@
 }
 
 .one {
-    background-color: blue;
+    /* background-color: blue; */
 }
 
-/* .two {
-    background-color: aqua;
-} */
+.two {
+    overflow: scroll;
+    /* max-height: 100vh; */
+}
+.two::-webkit-scrollbar{
+    display: none;
+}
 
 .logo{
     width: 100%;
@@ -217,6 +221,35 @@ select {
     color: white;
 }
 
+.sidebar{
+    padding-left: 5px;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sidebar::-webkit-scrollbar {
+    background-color: white;
+    width: 10px;
+    box-shadow: 1px 2px 5px inset;
+    border-radius: 2px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: rgb(180, 208, 218);
+    border-radius: 20px;
+}
+
+
+.fa-house,.fa-users,.fa-hand,.fa-dollar-sign{
+    background: white;
+    box-shadow: 1px 1px 5px;
+    min-width: 35px;
+    padding: 7px;
+    border-radius: 10px;
+    text-align: center;
+}
+
 .fa-angle-down,
 .fa-comment,
 .fa-diagram-project,
@@ -224,12 +257,33 @@ select {
     color: black;
 }
 
-@media only screen and (max-width: 550px) {
+.fa-bars {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    color:black;
+    background: white;
+    box-shadow: 1px 1px 4px;
+    border-radius: 5px;
+    padding: 5px 5px;
+    display: none;
+}
+
+@media only screen and (max-width: 690px) {
     .one {
         display: none;
     }
 
     .main {
+        display: block;
+    }
+    .rit{
+        width: 50%;
+    }
+    .lft{
+        margin-left: 50px;
+    }
+    .fa-bars{
         display: block;
     }
 }
