@@ -14,6 +14,24 @@
 
                 <div class="flx">
 
+                    
+                    <%if(allClients.length>0){%>
+
+                        <% for(let i=0; i<allClients.length; i++){ %>
+
+                            <div class="col">
+                                <div class="card h-100 crd">
+                                  <div class="fstltr"> <%=allClients[i].name.charAt(0).toUpperCase()%> </div>
+                                  <div class="card-body">
+                                    <h5 class="card-title"><%=allClients[i].name%></h5>
+                                    <p class="card-text"><%=allClients[i].email%></p>
+                                  </div>
+                                </div>
+                              </div>
+
+                        <%}%>
+                        <%}%>
+
                     <div class="card crd" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i class="fa-solid fa-user-plus"></i>
                         <div class="card-body">
@@ -21,62 +39,7 @@
                             <p class="card-text">click here to add new client</p>
                         </div>
                     </div>
-                    <div class="card crd" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-user-plus"></i>
-                        <div class="card-body">
-                            <h4>New Client</h4>
-                            <p class="card-text">click here to add new client</p>
-                        </div>
-                    </div>
-                    <div class="card crd" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-user-plus"></i>
-                        <div class="card-body">
-                            <h4>New Client</h4>
-                            <p class="card-text">click here to add new client</p>
-                        </div>
-                    </div>
-                    <div class="card crd" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-user-plus"></i>
-                        <div class="card-body">
-                            <h4>New Client</h4>
-                            <p class="card-text">click here to add new client</p>
-                        </div>
-                    </div>
-                    <div class="card crd" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-user-plus"></i>
-                        <div class="card-body">
-                            <h4>New Client</h4>
-                            <p class="card-text">click here to add new client</p>
-                        </div>
-                    </div>
-                    <div class="card crd" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-user-plus"></i>
-                        <div class="card-body">
-                            <h4>New Client</h4>
-                            <p class="card-text">click here to add new client</p>
-                        </div>
-                    </div>
-                    <div class="card crd" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-user-plus"></i>
-                        <div class="card-body">
-                            <h4>New Client</h4>
-                            <p class="card-text">click here to add new client</p>
-                        </div>
-                    </div>
-                    <div class="card crd" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-user-plus"></i>
-                        <div class="card-body">
-                            <h4>New Client</h4>
-                            <p class="card-text">click here to add new client</p>
-                        </div>
-                    </div>
-                    <div class="card crd" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-user-plus"></i>
-                        <div class="card-body">
-                            <h4>New Client</h4>
-                            <p class="card-text">click here to add new client</p>
-                        </div>
-                    </div>
+               
 
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -85,13 +48,29 @@
                               <h5 class="modal-title" id="exampleModalLabel">Create New Client</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
+
+                            <form action="/create_client" class=""  method="post">
                             <div class="modal-body">
-                              ...
+                              
+
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+                                </div>
+                                  <div class="mb-3">
+                                    <input type="text" name="adminId" id="" value="<%= adminId%>" style="display: none;">
+                                    <label for="formGroupExampleInput2" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Name" name="name">
+                                  </div>
+
+
                             </div>
+
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
+                              <button type="submit" class="btn btn-primary">Create</button>
                             </div>
+                        </form>
                           </div>
                         </div>
                       </div>

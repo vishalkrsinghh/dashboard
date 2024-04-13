@@ -54,7 +54,8 @@ module.exports.loginAdmin = async (req, res) => {
     try {
 
         let { email, password } = req.body;
-
+        email = email.toLowerCase();
+        password = password.toLowerCase();
         let admin = await adminCollection.findOne({ email });
 
         if (admin) {
@@ -66,11 +67,9 @@ module.exports.loginAdmin = async (req, res) => {
                 let token = jwt.sign({ _id: admin._id }, process.env.JWT_SECRET_KEY, { expiresIn: "60m" })
                 res.cookie('token', token, { maxAge: 60 * 60 * 1000, httpOnly: true });
                 req.flash('success', 'Loged in Successfully!')
-                // console.log("login ",req.headers["authorization"]);
-                // console.log("login ",req.headers);
-                // res.render("home",{name:user.name,email:user.email});
-                console.log("session,, = ", " ", req.session);
-                console.log("locals,  ", " ", res.locals);
+
+                // console.log("session,, = ", " ", req.session);
+                // console.log("locals,  ", " ", res.locals);
                 res.redirect("/dashboard");
                 // res.send("welcome to dashboard")
             } else {

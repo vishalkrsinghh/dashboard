@@ -14,7 +14,8 @@ module.exports.dashboard = async (req, res) => {
         let isAdmin = await adminCollection.findOne({ _id: decodedDataOfToken._id });
 
         res.render("dashboardPage", {
-            adminName: isAdmin.name
+            adminName: isAdmin.name,
+            isAdmin
         });
     } catch (err) {
         console.log(err)
